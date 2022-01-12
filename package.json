@@ -1,0 +1,29 @@
+{
+  "name": "stata2r_vuepress",
+  "version": "1.0.0",
+  "description": "Stata to R",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev src",
+    "docs:build": "vuepress build src -d docs"
+  },
+  "devDependencies": {
+    "@snippetors/vuepress-plugin-code-copy": "^1.1.0",
+    "@vue/component-compiler-utils": "^3.3.0",
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.32",
+    "@vuepress/plugin-search": "^2.0.0-beta.32",
+    "@vuepress/plugin-shiki": "^2.0.0-beta.32",
+    "@vuepress/shared-utils": "^1.9.5",
+    "lru-cache": "^6.0.0",
+    "shiki": "^0.10.0",
+    "vuepress": "^2.0.0-beta.32",
+    "vuepress-plugin-clipboard": "^1.0.5",
+    "vuepress-plugin-flexsearch": "^0.3.0",
+    "vuepress-plugin-fulltext-search": "^2.2.1"
+  },
+  "dependencies": {
+    "@datev/vuepress-offlinesearch-parse-cli": "^1.3.1",
+    "@datev/vuepress-plugin-offlinesearch": "^0.6.29",
+    "@kawarimidoll/vuepress-plugin-tailwind": "^2.0.0"
+  }
+}
