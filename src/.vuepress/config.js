@@ -1,5 +1,6 @@
 module.exports = {
     base: "/docstest.github.io/",
+    title: "Stata2R",
 	plugins: [
 		["@vuepress/plugin-shiki", { theme: "rose-pine" }],
 		["vuepress-plugin-clipboard"],
@@ -17,7 +18,6 @@ module.exports = {
 			lineNumbers: true,
 		},
 	},
-	title: "Stata2R",
 	themeConfig: {
 		repo: "stata2r/stata2r.github.io",
         docsRepo: 'https://github.com/stata2r/stata2r.github.io',
