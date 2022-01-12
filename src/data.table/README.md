@@ -1086,16 +1086,32 @@ rbindlist(list(dat, dat)) ## Or rbind(dat, dat)
 _These next few examples are meant to highlight some specific data.table merge tricks. They don't really have good Stata equivalents (that we're aware of)._
 
 ##### Merge on different ID names
+
+<div class="code--container">
+<div>
+
 ```r
 mdat = merge(dat, dat2, by.x='dest', by.y='faa')
 ```
+</div>
+<div>
+</div>
+</div>
+
 
 ##### Set keys for even faster merges and syntax shortcuts
+
+<div class="code--container">
+<div>
 
 ```r
 setkey(dat, dest); setkey(dat2, dest)
 mdat = merge(dat, dat2) ### note: don't need 'by'
 ```
+</div>
+<div>
+</div>
+</div>
 
 ##### Non-equi joins
 
@@ -1104,6 +1120,9 @@ But they are incredibly powerful and solve a suprisingly common problem: Merging
 datasets over a range (e.g. start to end dates), rather than exact matches.
 Here follows a simple example where we want to subset the first quarter flights
 for American Airlines and second quarter flights for United Airlines:
+
+<div class="code--container">
+<div>
 
 ```r
 dat3 = data.table(carrier     = c('AA', 'UA'),
@@ -1114,6 +1133,10 @@ dat[dat3, on = .(carrier,
                  month >= start_month,
                  month <= end_month)]
 ```
+</div>
+<div>
+</div>
+</div>
 
 ##### Rolling joins 
 
@@ -1121,6 +1144,9 @@ Rolling join are similar and allow you to match a set of dates forwards or
 backwards. For example, our `dat` datset ends in October. So let's say we want
 to carry the last known entries for American and United Airlines forward to
 (random) future dates.
+
+<div class="code--container">
+<div>
 
 ```r
 dat4 = data.table(carrier  = c('AA', 'UA'),
@@ -1130,7 +1156,10 @@ dat[, date := as.IDate(paste(year, month, day, sep='-'))]
 
 dat[dat4, on = .(carrier, date=new_date), roll='nearest']
 ```
-
+</div>
+</div>
+<div>
+</div>
 
 
 

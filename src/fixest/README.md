@@ -11,6 +11,8 @@ non-linear models, as well as regression tables and plotting methods.
 
 Before continuing, make sure that you have installed **fixest**. You only 
 have to do this once (or as often as you want to update the package).
+<div class="code--container">
+<div>
 
 ```r
 # Install from CRAN (recommended)
@@ -19,15 +21,27 @@ install.packages('fixest')
 # Requires Rtools and the remotes package
 # remotes::install_github('lrberge/fixest')
 ```
+</div>
+<div>
+</div>
+</div>
 
 Once **fixest** is installed, don't forget to load it whenever you want to 
 use it. Unlike Stata, you have to re-load a package every time you start a new R 
 session.
 
+<div class="code--container">
+<div>
+
 ```r
 # Load fixest into our current R session
 library(fixest)
 ```
+</div>
+<div>
+</div>
+</div>
+
 
 In the examples that follow, we will use a modified dataset from the CPS (plus
 some added variables for demonstration purposes). To load the data run the 
