@@ -1,0 +1,1 @@
+const t={key:"v-37b893e5",path:"/fixest/",title:"fixest",lang:"en-US",frontmatter:{title:"fixest"},excerpt:"",headers:[{level:2,title:"Introduction to fixest",slug:"introduction-to-fixest",children:[]}],git:{updatedTime:1641967624e3,contributors:[{name:"Kyle F. Butts",email:"buttskyle96@gmail.com",commits:1}]},filePathRelative:"fixest/README.md"};export{t as data};

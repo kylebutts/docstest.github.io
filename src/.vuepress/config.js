@@ -1,4 +1,5 @@
 module.exports = {
+    base: "https://kylebutts.com/docstest.github.io/",
 	plugins: [
 		["@vuepress/plugin-shiki", { theme: "rose-pine" }],
 		["vuepress-plugin-clipboard"],
